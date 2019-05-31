@@ -1,6 +1,7 @@
 steps:
 - name: 'gcr.io/cloud-builders/go'
   args: ['install', '.']
+  env: ['PROJECT_ROOT=hello']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/gcloud-mesos/helloworld:test', '-f', 'Dockerfile', '.']
 images: ['gcr.io/gcloud-mesos/helloworld:test']
