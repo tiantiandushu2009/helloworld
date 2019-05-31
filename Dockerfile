@@ -2,6 +2,6 @@ FROM alpine
 
 MAINTAINER kang-prince <xiaoqi.kang@xtalpi.com>
 
-COPY gopath/bin/helloworld /usr/local/bin/helloworld
+COPY hello /usr/local/bin/hello
 
-ENTRYPOINT [ "helloworld" ]
+ENTRYPOINT [ "hello" ]
