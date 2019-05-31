@@ -1,0 +1,4 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/gcloud-mesos/helloworld:test', '-f', 'Dockerfile', '.']
+images: ['gcr.io/gcloud-mesos/helloworld:test']
