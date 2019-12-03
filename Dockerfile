@@ -1,6 +1,6 @@
 FROM alpine
 
-MAINTAINER kang-prince <xiaoqi.kang@xtalpi.com>
+MAINTAINER kang-prince 
 
 COPY hello /usr/local/bin/hello
 
